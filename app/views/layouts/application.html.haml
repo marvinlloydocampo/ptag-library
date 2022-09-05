@@ -8,5 +8,15 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  / Navbar
+  %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .container-fluid
+      %a.navbar-brand{:href => "#"} Marvin PTAG Library Test
+      %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarSupportedContent", "data-bs-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          %li.nav-item
+            %a.nav-link.active{"aria-current" => "page", :href => "#"} Home
   %body
     = yield
